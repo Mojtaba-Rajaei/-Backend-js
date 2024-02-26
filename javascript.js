@@ -92,3 +92,14 @@ console.log(typeof newX,newX)
 /* prompt undefined in nodejs */
 // let newValue = prompt("Enter new value");
 // console.log(typeof newValue);
+
+console.log( 0 === false); console.log( 0 == false);  // consider type of value too
+console.log( '0' === 0); console.log( 0 == false); 
+
+console.log(5 > '4',
+    "apple" > "pineapple",
+    "2" > "12",
+    undefined == null,
+    undefined === null,
+    null == "\n0\n",
+    null === +"0");
