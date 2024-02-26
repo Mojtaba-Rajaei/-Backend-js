@@ -93,9 +93,12 @@ console.log(typeof newX,newX)
 // let newValue = prompt("Enter new value");
 // console.log(typeof newValue);
 
+// stric compare
 console.log( 0 === false); console.log( 0 == false);  // consider type of value too
 console.log( '0' === 0); console.log( 0 == false); 
 
+
+// compare
 console.log(5 > '4',
     "apple" > "pineapple",
     "2" > "12",
