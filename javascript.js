@@ -95,7 +95,7 @@ console.log(typeof newX,newX)
 
 // stric compare
 console.log( 0 === false); console.log( 0 == false);  // consider type of value too
-console.log( '0' === 0); console.log( 0 == false); 
+console.log( '0' === 0); console.log( '0' == false); 
 
 
 // compare
@@ -106,3 +106,20 @@ console.log(5 > '4',
     undefined === null,
     null == "\n0\n",
     null === +"0");
+
+    console.log(1 || 2);
+    console.log(1 && 2);
+    console.log(1 ^ 2);
+
+
+let flag = true;
+
+trigger: for(;flag;) {
+    console.log(`first for flag is: ${flag}`);
+    flag = !flag;
+    for(;!flag;){
+        console.log(`second for flag is: ${flag}`);
+        flag = !flag;
+        if(flag = flag) break trigger;
+    }
+}
