@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Hello world </h1>
+    <script>
+        let userInput = prompt("Enter the number");
+        switch(userInput){
+            case '1':
+            case '2':
+                alert("one or tow");
+                break;
+            case Number('3'):
+                alert("never execute");
+                break;
+            default:
+                alert("Unknown input");
+        }
+    </script>
+    
+</body>
+</html>
