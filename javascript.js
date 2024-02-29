@@ -123,3 +123,20 @@ trigger: for(;flag;) {
         if(flag = flag) break trigger;
     }
 }
+
+
+function min(first,second) {
+    if(!(first && second)) 
+        return;
+    return first<second ? first : second;  // like define if and else 
+}
+
+console.log(min(10));
+console.log(min(10,20));
+
+let funct = function(){
+    console.log("hello");
+}
+
+console.log(funct);
+console.log(min);
