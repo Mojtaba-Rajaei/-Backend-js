@@ -9,7 +9,7 @@ console.log(
 'jfkdlsjfdfadsa',
 'dkljfds jfdlksjflkd dsjlfjds',
 'jflkdjsj jfdlksjflkd'
-)
+);
 
 // This is a comment
 /*
