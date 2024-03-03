@@ -146,8 +146,8 @@ console.log(min);
 
 let readFromInput;
 
-readline.question("inter the number?",name => {
-    readFromInput = name ;
+readline.question("inter the number?",number => {
+    readFromInput = number ;
     readline.close()
 });
 
@@ -156,3 +156,10 @@ let welcomeFunction = readFromInput > 18 ?
                       function() {console.log("Access denied")};
 welcomeFunction();
                     
+
+let alertFunciton = () => {
+    alert("This is alert funciton");
+    confirm("Are u ok?");
+}
+
+// alertFunciton();
