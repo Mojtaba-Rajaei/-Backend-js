@@ -1,3 +1,6 @@
+
+let readline = require('readline').createInterface({input:process.stdin,output:process.stdout});
+
 console.log("hello world");
 console.log('hello world')
 console.log(
@@ -140,3 +143,16 @@ let funct = function(){
 
 console.log(funct);
 console.log(min);
+
+let readFromInput;
+
+readline.question("inter the number?",name => {
+    readFromInput = name ;
+    readline.close()
+});
+
+let welcomeFunction = readFromInput > 18 ? 
+                      function(){console.log("Welcome")} :
+                      function() {console.log("Access denied")};
+welcomeFunction();
+                    
