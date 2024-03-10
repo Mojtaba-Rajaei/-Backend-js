@@ -163,3 +163,86 @@ let alertFunciton = () => {
 }
 
 // alertFunciton();
+
+// object
+
+function isEmpty( obj ) {
+    for( let key in obj ) {
+        return false;
+    }
+    return true;
+}
+
+let user = {}
+
+let flg = isEmpty(user);
+console.log(flg);
+
+user.name = "ali";
+user.family = "reza";
+user.age = "13";
+delete user.age;
+
+flg = isEmpty(user);
+console.log(flg);
+
+
+function sumObjectValue(obj) {
+    let sum = 0;
+    for (let key in obj) {
+        sum += obj[key];
+    }
+    return sum;
+}
+
+let salaris = {
+    ali : 30,
+    reza : 20,
+    mohhamad : 40,
+}
+
+resualt = sumObjectValue(salaris);
+console.log(resualt); 
+
+function Multiple(obj) {
+    // obj["height"] *= 2;
+    // obj["width"] *= 2;
+
+    for (let key in obj) {
+        if (typeof key == "number") {
+            obj[key] *= 2;
+        }
+    }
+}
+
+let kala = {
+    height : 400,    // obj["height"] *= 2;
+    // obj["width"] *= 2;
+    width : 200,
+    name : "Book"
+}
+
+console.log(kala);
+
+Multiple(kala);
+
+console.log(kala);
+
+
+function marry(man, women) {
+    man.wife = women;
+    women.husbend = man;
+
+    return {
+        father : man,
+        mother : women
+    }
+}
+
+let family = marry({
+    name : "Ali"
+} ,{
+    name : "Azar"
+});
+
+console.log(family);
