@@ -246,3 +246,41 @@ let family = marry({
 });
 
 console.log(family);
+
+
+
+let users = {
+    name: "ali",
+    family: "rezaee",
+
+    printText: function() { // method 
+        console.log(this.name + " " + this.family);
+    }
+}
+
+users.printText();
+
+
+function printInfo() {
+    console.log(this.name);
+}
+
+users.printInfo = printInfo;
+
+users.printInfo();
+printInfo();
+
+
+function createUser() {
+    return {
+        name: "amir",
+        f: function () {
+            return this;
+        },
+        obj: this // run-time assignment so value of 'this' berfor naming is 'undefined'  
+    }
+}
+
+let newUser = createUser();
+console.log(newUser.f().name);
+console.log(newUser.obj.name);
