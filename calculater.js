@@ -23,7 +23,7 @@ let calculater = {
             readline.close()
         });
     }
-}
+}        
 
 calculater.read();
 console.log(calculater.add());
